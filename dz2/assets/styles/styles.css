@@ -1,0 +1,41 @@
+    @font-face {
+        font-family: 'Open Sans', sans-serif;
+        src: url(..//fonts/OpenSans-Bold.ttf);
+        font-weight: 700;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans', sans-serif;
+        src: url(/./assets/fonts/OpenSans-SemiBold.ttf);
+        font-weight: 600;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans', sans-serif;
+        src: url(/./assets/fonts/OpenSans-Light.ttf);
+        font-weight: 300;
+    }
+    
+    html {
+        font-family: 'Open Sans', sans-serif;
+        ;
+    }
+    
+    h1 {
+        color: rgb(127, 255, 138);
+        font-weight: 700;
+    }
+    
+    .title {
+        font-size: 45px;
+        line-height: normal;
+        color: brown;
+        font-weight: 600;
+    }
+    
+    .description {
+        color: aqua;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 300;
+    }
