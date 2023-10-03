@@ -1,0 +1,62 @@
+    @font-face {
+        font-family: 'Open Sans', sans-serif;
+        src: url(..//fonts/OpenSans-Bold.ttf);
+        font-weight: 700;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans', sans-serif;
+        src: url(/./assets/fonts/OpenSans-SemiBold.ttf);
+        font-weight: 600;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans', sans-serif;
+        src: url(/./assets/fonts/OpenSans-Light.ttf);
+        font-weight: 300;
+    }
+    
+    html {
+        font-family: 'Open Sans', sans-serif;
+        ;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .menu {
+        color: cornflowerblue;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .h1 {
+        color: #222222;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
+    }
+    
+    .h2 {
+        color: coral;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 80px;
+    }
+    
+    . / .title {
+        font-size: 45px;
+        line-height: normal;
+        color: brown;
+        font-weight: 600;
+    }
+    
+    .p {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: #7D7987;
+    }
