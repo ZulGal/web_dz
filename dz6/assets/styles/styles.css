@@ -93,6 +93,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .rectangle_11 {
@@ -203,16 +204,11 @@ p {
     width: 381px;
     height: 291px;
     border: 1px solid #000;
-}
-
-.card_content {
-    margin: 0;
-    width: 310px;
+    display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-top: 35px;
+    padding-bottom: 30px;
 }
 
 .icon {
@@ -230,7 +226,6 @@ p {
     line-height: normal;
     width: 215px;
     height: 30px;
-    margin-top: 25px;
 }
 
 .card_p {
@@ -243,8 +238,6 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    margin-top: 17px;
-    /* 22.5px */
 }
 
 .card_a {
