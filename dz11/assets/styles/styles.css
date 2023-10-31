@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "Lato";
+    src: url ("../assets/fonts/Lato-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url ("../assets/fonts/Lato-Black.ttf");
+    font-style: normal;
+    font-weight: 900;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: #222;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_left {
+    display: flex;
+    column-gap: 19px;
+}
+
+.title {
+    background-color: #F1E4E6;
+}
+
+.title_img {
+    margin-left: -20%;
+}
+
+.title_content {
+    display: flex;
+    gap: 63px;
+}
+
+.title_content_text {
+    display: flex;
+    align-items: center;
+}
+
+.title_texts {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    height: 92px;
+    max-width: 377px;
+}
+
+.title_text1 {
+    color: #222;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.title_text2 {
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.title_text3 {
+    color: #F16D7F;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cards_up {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.item_big {
+    grid-column: span 3;
+    /* align-self: flex-start; */
+}
+
+.cards_down_title {
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    margin-bottom: 48px;
+    align-items: center;
+}
+
+.down_h2 {
+    color: #222;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cards_down_title_text {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card_down {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card_down_title {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card_down_text {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.card_down_price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card_down_content {
+    display: flex;
+    padding: 24px 16px;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.cards_down_button {
+    color: #F26376;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.cards_down_button {
+    align-items: center;
+}
