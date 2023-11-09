@@ -13,8 +13,14 @@ p {
     margin: 0;
 }
 
-.header {
+header {
     background-color: #222;
+}
+
+.container_header {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
@@ -34,17 +40,23 @@ p {
     margin-right: 19px;
 }
 
+.menu_right {
+    display: flex;
+    gap: 33px;
+}
+
 .title {
     background-color: #F1E4E6;
 }
 
-.title_img {
-    margin-left: -20%;
-}
-
 .title_content {
     display: flex;
-    gap: 63px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.title_img {
+    margin-right: 63px;
 }
 
 .title_content_text {
@@ -56,7 +68,7 @@ p {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
     height: 92px;
-    max-width: 377px;
+    width: 377px;
 }
 
 .title_text1 {
@@ -131,6 +143,7 @@ p {
     gap: 6px;
     flex-direction: column;
     margin-bottom: 48px;
+    margin-top: 16px;
     align-items: center;
 }
 
@@ -167,6 +180,8 @@ p {
     font-size: 14px;
     font-weight: 300;
     line-height: normal;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .card_down_price {
@@ -179,7 +194,6 @@ p {
 .card_down_content {
     display: flex;
     padding: 24px 16px;
-    gap: 16px;
     flex-direction: column;
 }
 
@@ -199,4 +213,68 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:1023px) {
+    .container_header {
+        max-width: 100%;
+        padding-left: 32px;
+        padding-right: 41px;
+    }
+    .container {
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .menu_left_img {
+        margin-right: 41px;
+    }
+    .title_content {
+        max-width: 100%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .title_img {
+        margin-right: 39px;
+    }
+    .title_texts {
+        width: 283px;
+    }
+    .title_text1 {
+        font-size: 44px;
+    }
+    .title_text2 {
+        font-size: 24px;
+    }
+    .title_text3 {
+        font-size: 24px;
+    }
+    .cards_up {
+        gap: 20px;
+        justify-items: center;
+    }
+    .cards_up_item {
+        position: relative;
+    }
+    .cards_down_title {
+        gap: 3px;
+        margin-top: 59px;
+        margin-bottom: 73px;
+    }
+    .card_down {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 16px;
+        justify-items: center;
+    }
+    .card_down_text {
+        margin-top: 12px;
+        margin-bottom: 18px;
+    }
+    .card_down_content {
+        display: flex;
+        padding: 25px 29px 20px 16px;
+        flex-direction: column;
+        width: 314px;
+    }
 }
