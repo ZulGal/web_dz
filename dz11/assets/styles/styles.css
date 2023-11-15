@@ -68,7 +68,7 @@ header {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
     height: 92px;
-    width: 377px;
+    max-width: 377px;
 }
 
 .title_text1 {
@@ -92,11 +92,11 @@ header {
     line-height: normal;
 }
 
-.cards_up {
+.cards_up_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 30px;
+    margin-bottom: 30px;
     margin-top: 65px;
 }
 
@@ -135,7 +135,6 @@ header {
 
 .item_big {
     grid-column: span 3;
-    /* align-self: flex-start; */
 }
 
 .cards_down_title {
@@ -143,11 +142,11 @@ header {
     gap: 6px;
     flex-direction: column;
     margin-bottom: 48px;
-    margin-top: 16px;
+    margin-top: 96px;
     align-items: center;
 }
 
-.down_h2 {
+.cards_down_h2 {
     color: #222;
     font-size: 30px;
     font-weight: 400;
@@ -202,20 +201,21 @@ header {
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
-    width: 212px;
-    height: 48px;
     flex-shrink: 0;
     border: 1px solid #F26376;
+    background-color: inherit;
+    padding: 15px 39px 14px 39px;
 }
 
 .cards_down_button_wrapper {
-    margin-top: 48px;
+    margin-top: 32px;
+    margin-bottom: 70px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1439px) {
     .container_header {
         max-width: 100%;
         padding-left: 32px;
@@ -253,8 +253,16 @@ header {
         gap: 20px;
         justify-items: center;
     }
+    .cards_up_img {
+        width: 100%;
+        height: 100%;
+    }
     .cards_up_item {
         position: relative;
+    }
+    .cards_down_img {
+        width: 100%;
+        height: 100%;
     }
     .cards_down_title {
         gap: 3px;
@@ -265,7 +273,7 @@ header {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: 16px;
-        justify-items: center;
+        align-items: center;
     }
     .card_down_text {
         margin-top: 12px;
