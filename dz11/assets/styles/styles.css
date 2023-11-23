@@ -208,8 +208,8 @@ header {
 }
 
 .cards_down_button_wrapper {
-    margin-top: 32px;
-    margin-bottom: 70px;
+    margin-top: 48px;
+    margin-bottom: 74px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,7 +238,7 @@ header {
         margin-right: 39px;
     }
     .title_texts {
-        width: 283px;
+        max-width: 283px;
     }
     .title_text1 {
         font-size: 44px;
@@ -284,5 +284,72 @@ header {
         padding: 25px 29px 20px 16px;
         flex-direction: column;
         width: 314px;
+    }
+    .cards_down_button_wrapper {
+        margin-top: 32px;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container_header {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .menu_left_img {
+        margin-right: 41px;
+    }
+    .menu_right_img2,
+    .menu_right_img3,
+    .title_img {
+        display: none;
+    }
+    .title_content {
+        height: 363px;
+    }
+    .title_texts {
+        padding-left: 15px;
+        height: 66px;
+        max-width: 236px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .title_text1 {
+        font-size: 38px;
+    }
+    .title_text2 {
+        font-size: 20px;
+    }
+    .title_text3 {
+        font-size: 20px;
+    }
+    .cards_up_grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-bottom: 32px;
+        margin-top: 64px;
+    }
+    .item_big {
+        height: 111px;
+    }
+    .cards_down_title {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    .card_down {
+        grid-template-columns: 1fr;
+    }
+    .containerV2 {
+        max-width: 100%;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .cards_down_button_wrapper {
+        margin-top: 40px;
+        margin-bottom: 85px;
     }
 }
